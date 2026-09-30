@@ -24,7 +24,6 @@ services:
       - traefik.enable=true
       - traefik.http.routers.3xui-vahidtwo-web.rule=Host(`3xui.vahidtwo.ir`)
       - traefik.http.routers.3xui-vahidtwo-web.entrypoints=web
-      - traefik.http.routers.3xui-vahidtwo-web.middlewares=redirect-to-https@file
       - traefik.http.routers.3xui-vahidtwo-web.service=3xui-vahidtwo
       - traefik.http.routers.3xui-vahidtwo-websecure.rule=Host(`3xui.vahidtwo.ir`)
       - traefik.http.routers.3xui-vahidtwo-websecure.entrypoints=websecure
